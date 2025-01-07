@@ -18,7 +18,7 @@ const JobList = () => {
           Explore thousands of job opportunities with all the information you
           need. Its your future
         </p>
-        <div className="flex gap-2 mt-10">
+        <div className="flex flex-col md:flex-row gap-2 mt-10">
           {lists.map((list) => (
             <List key={list.id} list={list}></List>
           ))}
