@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../Utility/LocalStorage";
 import Uai from "../Uai/Uai";
+import { Helmet } from "react-helmet-async";
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -40,6 +41,9 @@ const AppliedJobs = () => {
   }, [jobs]);
   return (
     <div>
+      <Helmet>
+        <title>Career | Applied Job</title>
+      </Helmet>
       <h3>Applied Jobs : {appliedJob.length}</h3>
       <div className="dropdown dropdown-hover  flex justify-end mt-2">
         <div tabIndex={0} role="button" className="btn m-1">

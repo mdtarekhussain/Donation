@@ -6,6 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import { saveJobApplication } from "../../Utility/LocalStorage";
+import { Helmet } from "react-helmet-async";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -19,6 +20,9 @@ const JobDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Career ? Job Details</title>
+      </Helmet>
       <h2>Job details of:{id} </h2>
       <div className="grid gap-2 md:grid-cols-4">
         <div className="border col-span-3 px-10 py-8 flex flex-col gap-10 ">

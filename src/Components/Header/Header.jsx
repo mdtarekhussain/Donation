@@ -9,7 +9,7 @@ const Header = () => {
       </li>
 
       <li>
-        <NavLink to="/jobs">Jobs</NavLink>
+        <NavLink to="/job">Jobs</NavLink>
       </li>
       <li>
         <NavLink to="/statistics">Statistics</NavLink>
@@ -19,7 +19,7 @@ const Header = () => {
         <NavLink to="/applied">Applied Jobs</NavLink>
       </li>
       <li>
-        <NavLink to="/blogs">Blogs </NavLink>
+        <NavLink to="/blog">Map </NavLink>
       </li>
     </>
   );
